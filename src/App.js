@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {Fragment} from 'react';
+import Navbar from './Components/Header';
 
 function App() {
   return (
-    
+    <Fragment>
+      <Navbar brand='Clinic app' />
+    </Fragment>
   );
 }
 
