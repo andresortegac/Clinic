@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Users = () => {
+const Users = ({users}) => {
     return(
         <table className='table'>
             <thead>
@@ -11,11 +11,14 @@ const Users = () => {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th>Id_user</th>
-                    <th>Name_user</th>
-                    <th>Password_user</th>
-                </tr>
+                {users.map(user => (
+                    <tr key={user.id_user}>
+                        <th>{user.id_user}</th>
+                        <th>{user.name_user}</th>
+                        <th>{user.password_user}</th>
+                    </tr>
+                ))}
+                
             </tbody>
 
         </table>
