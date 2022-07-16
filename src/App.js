@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import Navbar from './Components/Header';
-import Users from './Components/Users';
+import SelectUsers from './Components/selectUsers';
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
             <h2 style={{textAlign: 'center'}}>
               Users list
             </h2>        
-            <Users users={users}/>
+            <SelectUsers users={users}/>
           </div>
           <div className='col-5'> 
             <h2 style={{textAlign: 'center'}}>
