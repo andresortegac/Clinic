@@ -1,6 +1,16 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import Navbar from './Components/Header';
+import axios from 'axios';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+
+//componentes
+import Navbar from './Components/header';
 import SelectUsers from './Components/selectUsers';
+
+
+
 
 function App() {
 
